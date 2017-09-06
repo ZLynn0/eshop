@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新闻公告</title>
+<link rel="stylesheet" type="text/css" href="/web_project/admin/easyui/themes/default/easyui.css"/>
+<link rel="stylesheet" type="text/css" href="/web_project/admin/easyui/themes/icon.css"/>
+<script src="/web_project/admin/easyui/jquery.min.js" type="text/javascript"></script>
+<script  src="/web_project/admin/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+<script src="/web_project/admin/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+<script type="text/javascript"  src="/web_project/admin/js/news.js"></script>
+</head>
+<body>
+新闻公告
+<hr size="0"/>
+<table id="tb"></table>
+	<!-- dialog -->
+	<div id="dialog" class="easyui-dialog" title="添加新闻"
+		style="width: 400px; height: 300px"
+		data-options="iconCls:'icon-add',closable:true, collapsible:true,maximizable:true,buttons:'#footer' ,closed:true"  >
+
+		<form action="" method="post"  id="f3" name="f3">
+			<table id="tab">
+				<tr>
+					<td>新闻编号</td>
+					<td><input id="tid" name="tid"  type="text"		class="easyui-textbox  easyui-validatebox"
+						data-options="required:true" /></td>
+					</tr>
+					<tr>
+					<td>新闻标题</td>
+					<td><input id="title" name="title"  type="text"
+						class="easyui-textbox  easyui-validatebox"
+						data-options="required:true" /></td>
+					</tr>
+
+					
+					
+					<tr>
+					<td>新闻内容</td>
+					<td><input id="tcontent"  name="tcontent"   type="text"
+						class="easyui-textbox  easyui-validatebox"
+						data-options="required:true" /></td>
+					</tr>
+
+					
+					<tr>
+					<td>新闻日期</td>
+					<td><input id="tpubdate"  name="tpubdate"  type="text"
+						class= "easyui-datebox" required ="required"/></td>
+					</tr>
+					
+		</table>
+</form>
+</div>
+
+	<div id="footer">
+		<a id="btnsave" href="#" class="easyui-linkbutton"  data-options="iconCls:'icon-save'">保存</a> 
+		<a id="btncancel" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'">取消</a>
+	</div>
+
+
+</body>
+</html>

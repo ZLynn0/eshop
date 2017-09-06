@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>出版社管理</title>
+<link rel="stylesheet" type="text/css" href="/web_project/admin/easyui/themes/default/easyui.css"/>
+<link rel="stylesheet" type="text/css" href="/web_project/admin/easyui/themes/icon.css"/>
+<script src="/web_project/admin/easyui/jquery.min.js" type="text/javascript"></script>
+<script  src="/web_project/admin/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+<script src="/web_project/admin/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+<script type="text/javascript"  src="/web_project/admin/js/publisher.js"></script>
+</head>
+<body>
+出版社管理
+<hr size="0"/>
+<table id="tab"></table>
+	<!-- dialog -->
+	<div id="dialog" class="easyui-dialog" title="添加出版社"
+		style="width: 300px; height: 200px"
+		data-options="iconCls:'icon-add',closable:true, collapsible:true,maximizable:true,buttons:'#footer' ,closed:true"  >
+
+		<form action="" method="post"  id="f1" name="f1">
+			<table id="tb">
+				<tr>
+					<td>出版社编号</td>
+					<td><input id="pid" name="pid" type="text"		class="easyui-textbox  easyui-validatebox"
+						data-options="required:true" /></td>
+					</tr>
+					<tr>
+					<td>出版社名称</td>
+					<td><input id="upname" name="pname" type="text"
+						class="easyui-textbox  easyui-validatebox"
+						data-options="required:true" /></td>
+					</tr>
+		</table>
+</form>
+</div>
+
+	<div id="footer">
+		<a id="btnsave" href="#" class="easyui-linkbutton"  data-options="iconCls:'icon-save'">保存</a> 
+		<a id="btncancel" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'">取消</a>
+	</div>
+
+</body>
+</html>
